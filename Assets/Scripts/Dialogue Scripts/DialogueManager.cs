@@ -87,6 +87,7 @@ public class DialogueManager : MonoBehaviour
             if (textDialogue.text.Length < dialogue.Length)
             {
                 yield return new WaitForSeconds(textScrollSpeed);
+                GameManager.current.DialoguePlayText();
                 textDialogue.text += dialogue[i];
             }
 

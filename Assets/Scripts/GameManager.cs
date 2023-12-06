@@ -74,6 +74,12 @@ public class GameManager : MonoBehaviour
         onDialogueContinue?.Invoke();
     }
 
+    public Action onDialoguePlayText;
+    public void DialoguePlayText()
+    {
+        onDialoguePlayText?.Invoke();
+    }
+
     public Action onGameOverTrigger;
     public void GameOverTrigger()
     {
