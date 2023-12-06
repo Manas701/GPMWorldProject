@@ -298,11 +298,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1383598912366809323, guid: 97b8e8a292ae84d99b8b0c7f3da62b55, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -4.4363
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 1383598912366809323, guid: 97b8e8a292ae84d99b8b0c7f3da62b55, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -47
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 1383598912366809323, guid: 97b8e8a292ae84d99b8b0c7f3da62b55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -375,7 +375,7 @@ PrefabInstance:
     - target: {fileID: 8335164235015852003, guid: 97b8e8a292ae84d99b8b0c7f3da62b55, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 24c603b90a04e4acf9a2fa705c7abc34, type: 3}
+      objectReference: {fileID: 724073640, guid: 347a1591ea41a48a098fbc18bdc91b2e, type: 3}
     - target: {fileID: 9119242996178056570, guid: 97b8e8a292ae84d99b8b0c7f3da62b55, type: 3}
       propertyPath: m_fontSize
       value: 64
@@ -407,8 +407,49 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7382098973817415461, guid: 97b8e8a292ae84d99b8b0c7f3da62b55, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 792226277}
+    - targetCorrespondingSourceObject: {fileID: 7382098973817415461, guid: 97b8e8a292ae84d99b8b0c7f3da62b55, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 792226276}
   m_SourcePrefab: {fileID: 100100000, guid: 97b8e8a292ae84d99b8b0c7f3da62b55, type: 3}
+--- !u!1 &792226275 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7382098973817415461, guid: 97b8e8a292ae84d99b8b0c7f3da62b55, type: 3}
+  m_PrefabInstance: {fileID: 792226274}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &792226276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792226275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c29cff538c195c249b69c6f2236de67b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Library: []
+  m_SpriteLibraryAsset: {fileID: 0}
+--- !u!114 &792226277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 792226275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8b1ae4e4e52b34ea557c1c11e076fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_CategoryHash: 0
+  m_labelHash: 0
+  m_SpriteKey: 0
+  m_SpriteHash: 0
 --- !u!1 &844480031
 GameObject:
   m_ObjectHideFlags: 0
@@ -504,9 +545,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1483211538}
-  - {fileID: 1288802331}
   - {fileID: 1769505327}
   - {fileID: 966079035}
+  - {fileID: 1288802331}
   - {fileID: 333180009}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -527,7 +568,7 @@ GameObject:
   - component: {fileID: 966079037}
   - component: {fileID: 966079036}
   m_Layer: 5
-  m_Name: Title (2)
+  m_Name: Title (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -661,7 +702,7 @@ GameObject:
   - component: {fileID: 1288802333}
   - component: {fileID: 1288802332}
   m_Layer: 5
-  m_Name: Title
+  m_Name: Title (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -840,7 +881,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4eb8d2ba636d44f18bb08b6c65d46876, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a99829c94d4e247cea79980e2d3121b3, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -938,7 +979,7 @@ GameObject:
   - component: {fileID: 1769505329}
   - component: {fileID: 1769505328}
   m_Layer: 5
-  m_Name: Title (1)
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
