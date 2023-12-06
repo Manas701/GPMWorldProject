@@ -9,10 +9,13 @@ public class DialogueManager : MonoBehaviour
     public GameObject dialogueCanvas;
     public TextMeshProUGUI textName;
     public TextMeshProUGUI textDialogue;
+    [Range(0.01f, 0.5f)]
+    public float textScrollSpeed = 0.025f;
     public Image spritePlace1;
     public Image spritePlace2;
     public Sprite defaultSprite;
     private Color grayedOut = new Color(0.5f, 0.5f, 0.5f);
+    private bool isSentenceFinished = false, skipSentence = false;
     // private Color whiteOut = new Color(0f, 0f, 0f, 0f);
 
     public CharacterSpriteManager _CharacterSpriteManager;
@@ -30,6 +33,23 @@ public class DialogueManager : MonoBehaviour
         GameManager.current.onDialogueEnd += disableCanvas;
         GameManager.current.onSetSprite += displaySprites;
         GameManager.current.onSetDialogue += processDialogue;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (isSentenceFinished == false && skipSentence == false)
+            {
+                skipSentence = true;
+            }
+
+            if (isSentenceFinished == true)
+            {
+                isSentenceFinished = false;
+                GameManager.current.DialogueContinue();
+            }
+        }
     }
 
 
@@ -52,7 +72,33 @@ public class DialogueManager : MonoBehaviour
     public void processDialogue(string charName, string dialogue)
     {
         textName.text = charName;
-        textDialogue.text = dialogue;
+        // textDialogue.text = dialogue;
+        StartCoroutine(processTextScolling(dialogue));
+    }
+
+    IEnumerator processTextScolling(string dialogue)
+    {
+
+        textDialogue.text = "";
+        isSentenceFinished = false;
+
+        for (int i = 0; i < dialogue.Length; i++)
+        {
+            if (textDialogue.text.Length < dialogue.Length)
+            {
+                yield return new WaitForSeconds(textScrollSpeed);
+                textDialogue.text += dialogue[i];
+            }
+
+            if (skipSentence == true)
+            {
+                skipSentence = false;
+                textDialogue.text = dialogue;
+                isSentenceFinished = true;
+            }
+        }
+
+        isSentenceFinished = true;
     }
 
     public void displaySprites(string charName, string spriteName)

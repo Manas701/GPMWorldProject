@@ -17,12 +17,14 @@ public class StoryProcessor : MonoBehaviour
     string splashTag;
     string message;
     List<string> tags;
+    bool canContinueWithStory;
 
     // Start is called before the first frame update
     void Start()
     {
         tags = new List<string>();
         GameManager.current.onDialogueStart += enableDialogueMode;
+        GameManager.current.onDialogueContinue += enableCanContinueFlag;
     }
 
     // Update is called once per frame
@@ -32,18 +34,28 @@ public class StoryProcessor : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                //Is there more to the story?
-                if (story.canContinue)
+                if (canContinueWithStory == true)
                 {
-                    setMessage();
-                    parseTags();
-                    updateDialogue();
-                }
-                else
-                {
-                    disableDialogueMode();
+                    canContinueWithStory = false;
                 }
             }
+
+        }
+    }
+
+    void enableCanContinueFlag()
+    {
+        canContinueWithStory = true;
+        //Is there more to the story?
+        if (story.canContinue)
+        {
+            setMessage();
+            parseTags();
+            updateDialogue();
+        }
+        else
+        {
+            disableDialogueMode();
         }
     }
 
@@ -81,8 +93,8 @@ public class StoryProcessor : MonoBehaviour
 
     void updateDialogue()
     {
-        GameManager.current.SetDialogue(nametag, message);
         GameManager.current.SetSprite(nametag, spriteTag);
+        GameManager.current.SetDialogue(nametag, message);
     }
 
     void enableDialogueMode()
