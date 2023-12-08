@@ -101,6 +101,12 @@ public class PlayerController : MonoBehaviour
         UpdatePhysics();
         UpdateFireDirection();
         ApplyMovement();
+
+		if (!Input.GetKey("a") && !Input.GetKey("d") && !Input.GetKey("right") && !Input.GetKey("left") && IsGrounded()) {
+			Vector3 currVel = rb.velocity;
+			currVel.x = 0;
+			rb.velocity = currVel;
+		}
     }
     void ApplyMovement() {
         if (Mathf.Abs(rb.velocity.x) > movementSpeedCap) return;

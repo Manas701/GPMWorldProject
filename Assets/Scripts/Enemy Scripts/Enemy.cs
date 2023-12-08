@@ -41,7 +41,6 @@ public class Enemy : MonoBehaviour
             transform.localScale = scale;
         }
         transform.Find("Detection").localScale = new Vector3(detectionSize, detectionSize, detectionSize);
-        Debug.Log(transform.Find("Detection").localScale);
         // Move();
     }
     void Update() {
