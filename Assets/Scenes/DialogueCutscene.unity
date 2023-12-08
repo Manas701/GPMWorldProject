@@ -475,7 +475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3810485329980393775, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_fontSize
-      value: 35
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3810485329980393775, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_fontStyle
@@ -483,7 +483,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3810485329980393775, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_fontSizeBase
-      value: 35
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: comicPages.Array.size
