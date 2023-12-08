@@ -9,10 +9,13 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     private AudioSource textAudioSource;
     [SerializeField]
+    private AudioSource phoneAudioSource;
+    [SerializeField]
     private AudioClip popUpSfx;
     [SerializeField]
     private AudioClip textSfx;
-
+    [SerializeField] 
+    private AudioClip phoneSfx;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +23,8 @@ public class AudioManager : MonoBehaviour
         GameManager.current.onSetDialogue += PlayPopSound;
         //playaudio one by one word
         GameManager.current.onDialoguePlayText += TextSound;
+        GameManager.current.onDialogueStart +=PhoneSound;
+        GameManager.current.onDialogueEnd += PhoneSound;
     }
 
     // Update is called once per frame
@@ -43,6 +48,12 @@ public class AudioManager : MonoBehaviour
             textAudioSource.Play();
         }
        
+    }
+    void PhoneSound()
+    {
+        phoneAudioSource.clip=phoneSfx;
+        phoneAudioSource.Play();
+
     }
 
 
