@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
     public Transform rotatedTransform;
 	public PhysicsMaterial2D physicsMaterial;
 	public GameObject bulletPrefab;
+	public Transform instanceManager;
 
     [Header("Combat Variables")] [Space(4)]
     [Tooltip("distance from the player the attack is fired")]
@@ -71,6 +72,7 @@ public class PlayerController : MonoBehaviour
 		physicsMaterial.friction = groundedFriction;
 		rb.sharedMaterial = physicsMaterial;
         constraints = rb.constraints;
+		instanceManager = GameObject.Find("InstanceManager").transform;
     }
     void Start()
     {
@@ -129,8 +131,10 @@ public class PlayerController : MonoBehaviour
 		if (fireCooldownTimer <= 0) {
 			fireCooldownTimer = fireCooldown;
 			Quaternion rotation = Quaternion.AngleAxis(Mathf.Atan2(fireDirection.y, fireDirection.x) * Mathf.Rad2Deg, Vector3.forward);
-			GameObject bullet = Instantiate(bulletPrefab, (Vector2)transform.position+fireDirection*fireDist, rotation);
+			GameObject bullet = Instantiate(bulletPrefab, (Vector2)transform.position+fireDirection*fireDist, rotation, instanceManager);
 			bullet.GetComponent<Bullet>().bulletDirection = fireDirection;
+			bullet.GetComponent<Bullet>().shooter = "Player";
+			//bullet.layer = 0;
 		}
 	}
     #endregion

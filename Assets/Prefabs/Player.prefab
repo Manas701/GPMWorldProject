@@ -118,7 +118,9 @@ MonoBehaviour:
   rotatedTransform: {fileID: 409348915216467460}
   physicsMaterial: {fileID: 6200000, guid: 8b2d014f3b1894a3db81470466fd2d6b, type: 2}
   bulletPrefab: {fileID: 6926444704366162927, guid: b94d2ba03c9c14796a36bc0c1c02a5fe, type: 3}
-  fireDist: 0.5
+  instanceManager: {fileID: 0}
+  fireDist: 0.75
+  fireCooldown: 0.25
   minRotateAngle: 30
   moveAcceleration: 2000
   jumpForce: 6

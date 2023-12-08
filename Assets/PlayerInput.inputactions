@@ -122,6 +122,17 @@
                 },
                 {
                     "name": "",
+                    "id": "bd4c0d0b-352c-4b17-94c9-250d321fa184",
+                    "path": "<Keyboard>/space",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Jump",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "a453b083-e5d7-43f0-bf3c-33ac81989c42",
                     "path": "<Mouse>/position",
                     "interactions": "",
