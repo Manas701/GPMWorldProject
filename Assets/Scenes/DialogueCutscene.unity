@@ -411,10 +411,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29516a749d6912b44b64f56dc5cde8a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  testInkFile: {fileID: 0}
-  endInkFile: {fileID: 0}
-  sp: {fileID: 0}
-  triggerDialogueBool: 0
 --- !u!4 &641233571
 Transform:
   m_ObjectHideFlags: 0
@@ -475,14 +471,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47af41bf83757114183824cb944eb534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inkFile: {fileID: 0}
-  dialogueMode: 0
-  nametag: 
-  spriteTag: 
-  splashTag: 
-  message: 
-  tags: []
-  canContinueWithStory: 0
 --- !u!114 &1006462458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -495,21 +483,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384d82a4bee43c74f8b8c10fd97c2675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogueCanvas: {fileID: 0}
-  textName: {fileID: 0}
-  textDialogue: {fileID: 0}
-  textScrollSpeed: 0.025
-  spritePlace1: {fileID: 0}
-  spritePlace2: {fileID: 0}
-  defaultSprite: {fileID: 0}
-  grayedOut:
-    r: 0.5
-    g: 0.5
-    b: 0.5
-    a: 1
-  isSentenceFinished: 0
-  skipSentence: 0
-  _CharacterSpriteManager: {fileID: 0}
 --- !u!1 &1166329507
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,7 +540,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1881683727, guid: b73119111125a4d81ba4aef6c2ea1b72, type: 3}
+  m_Sprite: {fileID: -1448395802, guid: b73119111125a4d81ba4aef6c2ea1b72, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -629,7 +602,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ca4be14aed14be47bd8b568f421fddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterSprites: []
 --- !u!1001 &1417405264
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -638,6 +610,189 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1648933842}
     m_Modifications:
+    - target: {fileID: 1456019450331713202, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3286010075871820232, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3810485329980393775, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: m_fontSize
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3810485329980393775, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: m_fontStyle
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3810485329980393775, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.size
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[0].comicText
+      value: "Chief: OD! We didn\u2019t see you last night, the boys were worried
+        about you.          (Press Space)"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[1].comicText
+      value: 'OD: I need airspace access, Chief.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[2].comicText
+      value: 'Chief: Where you headed?  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[3].comicText
+      value: "OD:  Just on a personal scouting mission. Shouldn\u2019t be long.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[4].comicText
+      value: 'Chief:  [typing noises] All right, you''re cleared. Nice outfit by
+        the way, very sharp. '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[5].comicText
+      value: 'OD:  Thanks.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[6].comicText
+      value: "Chief:  Hey, it says you\u2019re in our airspace. Swing by when you\u2019re
+        done-"
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[7].comicText
+      value: " Chief: We should talk about\u2026 you know\u2026 your request and
+        all."
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[8].comicText
+      value: "OD: \u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[9].comicText
+      value: "Chief:  Listen, I\u2019m sorry.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[10].comicText
+      value: "OD:  It\u2019s fine, Chief.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[11].comicText
+      value: "Chief: You know I\u2019d let you go home if I could. My heart breaks
+        for Penny and your little girl, really.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[12].comicText
+      value: "But if you were in my shoes, you\u2019d do the same.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[13].comicText
+      value: "OD: \u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[14].comicText
+      value: 'OD:  I just want the war to be over.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[15].comicText
+      value: "Chief:  Same here, kid\u2026 "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[16].comicText
+      value: "Chief:  But hey, it\u2019s not all bad. Did you hear about R&D\u2019s
+        new project? "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[17].comicText
+      value: 'Chief: The boys were just telling me about some kind of berserker weapon
+        or something-  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[18].comicText
+      value: 'OD:  I have to go, Chief.  '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[19].comicText
+      value: "Chief:  Oh. Right. I\u2019ll see you when you get back.  "
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[2].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[3].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[4].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[5].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[6].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[7].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[8].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[9].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[10].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[11].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[12].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[13].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[14].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[15].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[16].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[17].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[18].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[19].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
     - target: {fileID: 5540263269912798738, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1908.9424
@@ -680,28 +835,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7100826060157550611, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 468.28674
+      value: 474.61743
       objectReference: {fileID: 0}
     - target: {fileID: 7100826060157550611, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 120.12491
+      value: 114.15744
       objectReference: {fileID: 0}
     - target: {fileID: 7100826060157550611, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -16.420895
+      value: -16.405226
       objectReference: {fileID: 0}
     - target: {fileID: 7100826060157550611, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 6.1350684
+      value: 6.163218
       objectReference: {fileID: 0}
     - target: {fileID: 8251368142764247479, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_Name
       value: Comic Manager
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 3288212220812659527, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
-    - {fileID: 918260118754150379, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
@@ -816,9 +969,9 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1417405265}
   - {fileID: 2051089385}
   - {fileID: 1785884431}
+  - {fileID: 1417405265}
   m_Father: {fileID: 2082603097}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -923,8 +1076,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -252.16399, y: -190.7614}
-  m_SizeDelta: {x: 164.3768, y: 148.9364}
+  m_AnchoredPosition: {x: -252.66202, y: -186.77722}
+  m_SizeDelta: {x: 163.3807, y: 156.9048}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1785884432
 MonoBehaviour:
