@@ -12,7 +12,7 @@ public class AudioManager : MonoBehaviour
     private AudioClip popUpSfx;
     [SerializeField]
     private AudioClip textSfx;
-    private int a = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -44,5 +44,6 @@ public class AudioManager : MonoBehaviour
         }
        
     }
+
 
 }
