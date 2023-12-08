@@ -45,6 +45,8 @@ public class AudioManager : MonoBehaviour
         GameManager.current.onPlayerJump += JumpSound;
         GameManager.current.onPlayerShoot += ShootSound;
         GameManager.current.onPlayerHurt += HurtSound;
+        GameManager.current.onPlayerStopMove += StopMoveSound;
+        
     }
 
     // Update is called once per frame
@@ -105,5 +107,11 @@ public class AudioManager : MonoBehaviour
 
     }
 
+    void StopMoveSound()
+    {
+        playerMoveAudioSource.Stop();
 
+
+
+    }
 }

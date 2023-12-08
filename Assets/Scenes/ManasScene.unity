@@ -26104,14 +26104,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 326441725887321878, guid: 5c1562d4bde088c48b5ed8d5d089cd73, type: 3}
-      propertyPath: playerMoveSfx.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 326441725887321878, guid: 5c1562d4bde088c48b5ed8d5d089cd73, type: 3}
-      propertyPath: playerMoveSfx.Array.data[0]
-      value: 
-      objectReference: {fileID: 8300000, guid: 3dcbb6c9af2454d49b24135797382e22, type: 3}
     - target: {fileID: 1958235442045484700, guid: 5c1562d4bde088c48b5ed8d5d089cd73, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.28036657
@@ -26152,21 +26144,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2898098420659138561, guid: 5c1562d4bde088c48b5ed8d5d089cd73, type: 3}
-      propertyPath: m_Volume
-      value: 0.473
-      objectReference: {fileID: 0}
-    - target: {fileID: 3810112177459195835, guid: 5c1562d4bde088c48b5ed8d5d089cd73, type: 3}
-      propertyPath: m_Volume
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6388125488847356672, guid: 5c1562d4bde088c48b5ed8d5d089cd73, type: 3}
       propertyPath: m_Name
       value: AudioManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 7620664676493213085, guid: 5c1562d4bde088c48b5ed8d5d089cd73, type: 3}
-      propertyPath: m_Volume
-      value: 0.162
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
