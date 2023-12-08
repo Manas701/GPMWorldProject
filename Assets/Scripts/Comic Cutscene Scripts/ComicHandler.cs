@@ -29,8 +29,11 @@ public class ComicHandler : MonoBehaviour
     void Start()
     {
         comicIndex = 0;
-        comicImagePlace.enabled = false;
-        comicTextPlace.enabled = false;
+        // comicImagePlace.enabled = false;
+        // comicTextPlace.enabled = false;
+
+        loadComic();
+
     }
 
     // Update is called once per frame
