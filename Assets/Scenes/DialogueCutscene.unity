@@ -272,11 +272,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<<< Updated upstream:Assets/Scenes/DialogueCutscene.unity
   m_Sprite: {fileID: 21300000, guid: 699f72c10cb304b9f9cb524f80e51048, type: 3}
-========
-  m_Sprite: {fileID: 21300000, guid: 2f2590173eede46029d3226ba47cdd80, type: 3}
->>>>>>>> Stashed changes:Assets/Art/DialogueCutscene/DialogueCutscene.unity
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -638,7 +634,6 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1648933842}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<<< Updated upstream:Assets/Scenes/DialogueCutscene.unity
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 114.49988, y: -191.47838}
@@ -742,9 +737,6 @@ CanvasRenderer:
   m_GameObject: {fileID: 1252675682}
   m_CullTransparentMesh: 1
 --- !u!1 &1493005681
-========
---- !u!1 &1531009375
->>>>>>>> Stashed changes:Assets/Art/DialogueCutscene/DialogueCutscene.unity
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -752,35 +744,22 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-<<<<<<<< Updated upstream:Assets/Scenes/DialogueCutscene.unity
   - component: {fileID: 1493005682}
   - component: {fileID: 1493005684}
   - component: {fileID: 1493005683}
   m_Layer: 5
   m_Name: Ship Placeholder
-========
-  - component: {fileID: 1531009376}
-  - component: {fileID: 1531009378}
-  - component: {fileID: 1531009377}
-  m_Layer: 5
-  m_Name: Ship Sprite
->>>>>>>> Stashed changes:Assets/Art/DialogueCutscene/DialogueCutscene.unity
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<<< Updated upstream:Assets/Scenes/DialogueCutscene.unity
 --- !u!224 &1493005682
-========
---- !u!224 &1531009376
->>>>>>>> Stashed changes:Assets/Art/DialogueCutscene/DialogueCutscene.unity
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< Updated upstream:Assets/Scenes/DialogueCutscene.unity
   m_GameObject: {fileID: 1493005681}
   m_LocalRotation: {x: -0, y: -0, z: 1.813305e-11, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
@@ -795,32 +774,12 @@ RectTransform:
   m_SizeDelta: {x: 281.8148, y: 220.4651}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1493005683
-========
-  m_GameObject: {fileID: 1531009375}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2082603097}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -334.45, y: -17}
-  m_SizeDelta: {x: 100, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1531009377
->>>>>>>> Stashed changes:Assets/Art/DialogueCutscene/DialogueCutscene.unity
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< Updated upstream:Assets/Scenes/DialogueCutscene.unity
   m_GameObject: {fileID: 1493005681}
-========
-  m_GameObject: {fileID: 1531009375}
->>>>>>>> Stashed changes:Assets/Art/DialogueCutscene/DialogueCutscene.unity
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
@@ -844,17 +803,12 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
-<<<<<<<< Updated upstream:Assets/Scenes/DialogueCutscene.unity
 --- !u!222 &1493005684
-========
---- !u!222 &1531009378
->>>>>>>> Stashed changes:Assets/Art/DialogueCutscene/DialogueCutscene.unity
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<<< Updated upstream:Assets/Scenes/DialogueCutscene.unity
   m_GameObject: {fileID: 1493005681}
   m_CullTransparentMesh: 1
 --- !u!1 &1648933841
@@ -961,10 +915,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
-========
-  m_GameObject: {fileID: 1531009375}
-  m_CullTransparentMesh: 1
->>>>>>>> Stashed changes:Assets/Art/DialogueCutscene/DialogueCutscene.unity
 --- !u!1 &1785884430
 GameObject:
   m_ObjectHideFlags: 0
@@ -995,11 +945,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-<<<<<<<< Updated upstream:Assets/Scenes/DialogueCutscene.unity
   m_Father: {fileID: 1648933842}
-========
-  m_Father: {fileID: 2082603097}
->>>>>>>> Stashed changes:Assets/Art/DialogueCutscene/DialogueCutscene.unity
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1214,11 +1160,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 345525335}
-<<<<<<<< Updated upstream:Assets/Scenes/DialogueCutscene.unity
-========
-  - {fileID: 1531009376}
-  - {fileID: 1785884431}
->>>>>>>> Stashed changes:Assets/Art/DialogueCutscene/DialogueCutscene.unity
   - {fileID: 1179361317}
   - {fileID: 1006462456}
   - {fileID: 1648933842}
