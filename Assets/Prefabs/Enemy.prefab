@@ -122,7 +122,7 @@ MonoBehaviour:
   movingEnemy: 1
   shootingEnemy: 1
   startFacingLeft: 1
-  detectionSize: 15
+  detectionSize: 12
   fireDist: 0.3
   noticed: 0
 --- !u!1 &5420215172587761536
@@ -167,7 +167,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5420215172587761536}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
