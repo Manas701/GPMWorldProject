@@ -30,6 +30,10 @@ public class PlayerController : MonoBehaviour
 	[Tooltip("how long between shots")]
 	public float fireCooldown = 0.25f;
 	protected float fireCooldownTimer = 0f;
+	public float kbMultiplier = 1000.0f;
+	[Tooltip("Amount of time damage flash lasts")]
+	public float flashTime = 1.0f;
+    private float flashTimer = 0;
 
     [Header("Platformer Feel Variables")] [Space(4)]
     public float minRotateAngle = 30f;
@@ -55,6 +59,7 @@ public class PlayerController : MonoBehaviour
     public float fallYThreshold = 2f;
     [Tooltip("Distance from the ground that the player is considered grounded")]
     public float minJumpDist = 0.2f;
+	public float flashAmount = 0.4f;
     public float rotateSpeed;
     public PlayerInput input;
     private Vector2 moveDirection;
@@ -62,6 +67,7 @@ public class PlayerController : MonoBehaviour
     private float baseLinearDrag;
     private bool jumped=false;
     private Vector2 fireDirection;
+	private bool invincible = false;
     [SerializeField]private bool canMove;
     [HideInInspector] public RigidbodyConstraints2D constraints;
     [HideInInspector] public bool dead = false;
@@ -140,10 +146,20 @@ public class PlayerController : MonoBehaviour
     #endregion
 
     #region Helper Functions
+	void OnTriggerEnter2D(Collider2D collider) {
+		if (collider.gameObject.tag == "Enemy" && !invincible) {
+			TakeDamage(collider.gameObject.transform.position);
+		}
+	}
     void UpdateTimers() {
         jumpBufferTimer = Mathf.Max(jumpBufferTimer-Time.deltaTime, 0f);
         coyoteTimeTimer = Mathf.Max(coyoteTimeTimer-Time.deltaTime, 0f);
 		fireCooldownTimer = Mathf.Max(fireCooldownTimer-Time.deltaTime, 0f);
+		flashTimer += Time.deltaTime;
+        if (flashTimer >= flashTime && invincible) {
+            sprite.material.SetFloat("_FlashAmount", 0.0f);
+			invincible = false;
+        }
     }
     void UpdateFireDirection() {
         sprite.flipX = fireDirection.x < 0;
@@ -161,6 +177,19 @@ public class PlayerController : MonoBehaviour
             UpdateAirTime();
         }
     }
+	void DamageFlash() {
+        sprite.material.SetFloat("_FlashAmount", flashAmount);
+		invincible = true;
+        flashTimer = 0;
+    }
+	void TakeDamage(Vector3 damagePos) {
+		DamageFlash();
+		// Debug.Log("Player Position: " + gameObject.transform.position);
+		// Debug.Log("Damaging Position: " + damagePos);
+		Vector3 knockbackVector = gameObject.transform.position - damagePos;
+		// Debug.Log("KB Vector: " + knockbackVector);
+		rb.AddForce(knockbackVector * kbMultiplier);
+	}
     void UpdateGrounded() {
         // if (!dead) playerAnimator.Play("playerIdle");
         // if still able to jump

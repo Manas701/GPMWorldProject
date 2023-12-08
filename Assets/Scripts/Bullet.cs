@@ -37,7 +37,7 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Entered collision with " + collision.gameObject.name);
+        // Debug.Log("Entered collision with " + collision.gameObject.name);
         if (collision.gameObject.tag == "Ground")
         {
             Destroy(gameObject);

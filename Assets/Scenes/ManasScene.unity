@@ -681,11 +681,11 @@ Transform:
   m_GameObject: {fileID: 588485912}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 84.2, y: 13.8, z: 0}
-  m_LocalScale: {x: 10.041767, y: 10.041767, z: 10.041767}
+  m_LocalPosition: {x: 5.633645, y: 0.33258653, z: 0}
+  m_LocalScale: {x: 0.92771, y: 0.92771, z: 0.92771}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2055483019}
+  m_Father: {fileID: 1875251332}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &588485914
 SpriteRenderer:
@@ -28340,7 +28340,8 @@ Transform:
   m_LocalPosition: {x: 23.22, y: 10.2, z: 0}
   m_LocalScale: {x: 10.824252, y: 10.824252, z: 10.824252}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 588485913}
   m_Father: {fileID: 2055483019}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1875251333
@@ -28679,7 +28680,6 @@ Transform:
   - {fileID: 1697372625}
   - {fileID: 1865358072}
   - {fileID: 800532163}
-  - {fileID: 588485913}
   - {fileID: 2089734147}
   - {fileID: 1867899315}
   - {fileID: 555071416}
@@ -28874,6 +28874,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 364881775990909485, guid: 1916a071446874cc8ad6b956c046a180, type: 3}
+      propertyPath: moveRange
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 364881775990909485, guid: 1916a071446874cc8ad6b956c046a180, type: 3}
+      propertyPath: moveSpeed
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1176433948054652105, guid: 1916a071446874cc8ad6b956c046a180, type: 3}
       propertyPath: m_Name
       value: Enemy

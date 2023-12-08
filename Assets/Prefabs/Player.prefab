@@ -121,6 +121,8 @@ MonoBehaviour:
   instanceManager: {fileID: 0}
   fireDist: 0.75
   fireCooldown: 0.25
+  kbMultiplier: 1000
+  flashTime: 1
   minRotateAngle: 30
   moveAcceleration: 2000
   jumpForce: 6
@@ -132,6 +134,7 @@ MonoBehaviour:
   jumpBuffer: 0.5
   fallYThreshold: 3
   minJumpDist: 0.2
+  flashAmount: 0.4
   rotateSpeed: 2
   input: {fileID: 3660000125905921655}
   canMove: 1
@@ -402,7 +405,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 96d6d66ee97a641478abe691276a6857, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
