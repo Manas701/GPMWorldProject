@@ -149,6 +149,7 @@ public class PlayerController : MonoBehaviour
         jumpBufferTimer = jumpBuffer;
         rb.velocity = new Vector2(rb.velocity.x, 0);
         rb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
+        GameManager.current.PlayerJump();
         // player.Play("jump", 0.5f, 0.1f);
     }
 
@@ -171,6 +172,8 @@ public class PlayerController : MonoBehaviour
             GameObject bullet = Instantiate(bulletPrefab, (Vector2)transform.position + fireDirection * fireDist, rotation, instanceManager);
             bullet.GetComponent<Bullet>().bulletDirection = fireDirection;
             bullet.GetComponent<Bullet>().shooter = "Player";
+
+            GameManager.current.PlayerShoot();
             //bullet.layer = 0;
         }
     }
@@ -239,6 +242,7 @@ public class PlayerController : MonoBehaviour
     }
     void TakeDamage(Vector3 damagePos)
     {
+        GameManager.current.PlayerHurted();
         DamageFlash();
         health--;
         // Debug.Log("Player Position: " + gameObject.transform.position);

@@ -114,6 +114,24 @@ public class GameManager : MonoBehaviour
         onPlayerStopMove?.Invoke();
     }
 
+    public Action onPlayerJump;
+    public void PlayerJump()
+    {
+        onPlayerJump?.Invoke();
+    }
+
+    public Action onPlayerShoot;
+    public void PlayerShoot()
+    {
+        onPlayerShoot?.Invoke();
+    }
+
+    public Action onPlayerHurt;
+    public void PlayerHurted()
+    {
+        onPlayerHurt?.Invoke();
+    }
+
 
     #endregion
 }
