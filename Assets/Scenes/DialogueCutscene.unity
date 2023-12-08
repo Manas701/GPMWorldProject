@@ -411,6 +411,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29516a749d6912b44b64f56dc5cde8a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  testInkFile: {fileID: 0}
+  endInkFile: {fileID: 0}
+  sp: {fileID: 0}
+  triggerDialogueBool: 0
 --- !u!4 &641233571
 Transform:
   m_ObjectHideFlags: 0
@@ -471,6 +475,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 47af41bf83757114183824cb944eb534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inkFile: {fileID: 0}
+  dialogueMode: 0
+  nametag: 
+  spriteTag: 
+  splashTag: 
+  message: 
+  tags: []
+  canContinueWithStory: 0
 --- !u!114 &1006462458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,6 +495,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 384d82a4bee43c74f8b8c10fd97c2675, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueCanvas: {fileID: 0}
+  textName: {fileID: 0}
+  textDialogue: {fileID: 0}
+  textScrollSpeed: 0.025
+  spritePlace1: {fileID: 0}
+  spritePlace2: {fileID: 0}
+  defaultSprite: {fileID: 0}
+  grayedOut:
+    r: 0.5
+    g: 0.5
+    b: 0.5
+    a: 1
+  isSentenceFinished: 0
+  skipSentence: 0
+  _CharacterSpriteManager: {fileID: 0}
 --- !u!1 &1166329507
 GameObject:
   m_ObjectHideFlags: 0
@@ -540,7 +567,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 249207226, guid: 347a1591ea41a48a098fbc18bdc91b2e, type: 3}
+  m_Sprite: {fileID: 1881683727, guid: b73119111125a4d81ba4aef6c2ea1b72, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -602,6 +629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ca4be14aed14be47bd8b568f421fddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterSprites: []
 --- !u!1 &1252675682
 GameObject:
   m_ObjectHideFlags: 0
