@@ -404,7 +404,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: comicPages.Array.data[0].comicText
-      value: Hello Worlds
+      value: EFNVEWVNKW
       objectReference: {fileID: 0}
     - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: comicPages.Array.data[2].comicText
