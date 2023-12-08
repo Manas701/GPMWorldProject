@@ -398,6 +398,78 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1833444632}
     m_Modifications:
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[0].comicText
+      value: Hello Worlds
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[2].comicText
+      value: WBEBWBEJERBK
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[3].comicText
+      value: Curry Sauce
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[4].comicText
+      value: Curry Sauce
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[5].comicText
+      value: Curry Sauce
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[6].comicText
+      value: Curry Sauce
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[7].comicText
+      value: Curry Sauce
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[8].comicText
+      value: Curry Sauce
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[9].comicText
+      value: Curry Sauce
+      objectReference: {fileID: 0}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[2].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[3].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[4].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[5].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[6].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[7].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[8].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
+    - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
+      propertyPath: comicPages.Array.data[9].comicImage
+      value: 
+      objectReference: {fileID: 21300000, guid: 76a0b0b95235c95498d042cd624a25f0, type: 3}
     - target: {fileID: 5540263269912798738, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1908.9424

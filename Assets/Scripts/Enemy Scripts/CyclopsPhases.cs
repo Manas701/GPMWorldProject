@@ -8,7 +8,7 @@ public class CyclopsPhases : MonoBehaviour
 {
 
     public phases currentPhase;
-    public int currentHealth;
+    public float currentHealth;
     public Animator bossAnimator;
     public float actionCooldownTime;
     private bool canAction;
