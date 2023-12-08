@@ -398,45 +398,34 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1833444632}
     m_Modifications:
-    - target: {fileID: 918260118754150379, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: comicPages.Array.size
-      value: 5
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: comicPages.Array.data[0].comicText
-      value: 'Weary from his travels, OD lands the ship on the landing pad in front
-        of his house. He rushes out of the cockpit and sees a figure hurriedly bolt
-        out of the doorway. But as the figure comes closer into view, OD is shocked
-        to recognize it: not as his wife, but as a large lumbering lotus eater, its
-        face obscured by thick gray petals. Instantly, he pulls out his gun and trains
-        his scope on its bulbous head. '
+      value: As your ship sinks deeper into the planet's atmosphere, you recall the
+        events of the day before.
       objectReference: {fileID: 0}
     - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: comicPages.Array.data[1].comicText
-      value: "\u201COdysseus, it\u2019s me, it\u2019s me!!\u201D"
+      value: "\"Odysseus, I think this is it for her. I know it\u2019s selfish and
+        I know it\u2019s hard, but do whatever it takes to come home.  At least come
+        see your daughter one last time.\"  "
       objectReference: {fileID: 0}
     - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: comicPages.Array.data[2].comicText
-      value: 'The familiar voice rings in his ears and the gun falls out of his hands.
-        No longer trusting his eyes, he tears the mask off his face. As they adjust
-        to the light, he makes out the form of his wife, Penelope. She looks exactly
-        like she did 10 years ago. '
+      value: "\"You know I can\u2019t let you do that. You\u2019re too good of a
+        fighter. My hands are tied.\""
       objectReference: {fileID: 0}
     - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: comicPages.Array.data[3].comicText
-      value: "As they embrace, tears begin to stream down his face. She asks quietly,
-        \u201Cis everything okay? What was that about?\u201D OD squeezes her tightly.
-        \u201CI\u2019m so sorry, Penny. It was the mask- it was messing with my vision.\u201D 
-        She pauses. \u201CWhat did I look like to you?\u201D "
+      value: 'That night, after a routine scouting mission, you remember a shabby
+        scientist approached you in the pouring rain. '
       objectReference: {fileID: 0}
     - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: comicPages.Array.data[4].comicText
-      value: "'Gun fodder,' he thinks to himself. But he doesn\u2019t have the strength
-        to say it out loud. "
+      value: '"ATHENA has a message for you."'
       objectReference: {fileID: 0}
     - target: {fileID: 4779158438940475147, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: comicPages.Array.data[5].comicText
@@ -580,14 +569,6 @@ PrefabInstance:
     - target: {fileID: 5540263269912798738, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100826060157550611, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 844.1919
-      objectReference: {fileID: 0}
-    - target: {fileID: 7100826060157550611, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 7.6946
       objectReference: {fileID: 0}
     - target: {fileID: 8251368142764247479, guid: da774966a8a631f49bf31c97e8e41383, type: 3}
       propertyPath: m_Name
