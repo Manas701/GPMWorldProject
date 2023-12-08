@@ -13,8 +13,8 @@ public class CyclopsPhases : MonoBehaviour
     public float actionCooldownTime;
     private bool canAction;
     private string[] phaseOneTriggerNames = { "PlayRightHandSlam", "PlayLeftHandSlam", "PlayDiagnolSlam", "PlayDiagnolSlam", "PlayDiagnolSlam" };
-    private string[] phaseTwoTriggerNames = { "PlayRightHandSlam", "PlayLeftHandSlam", "PlayDiagnolSlam", "PlayHeadShootLaser" };
-    private string[] phaseThreeTriggerNames = { "PlayHeadShootLaser", "PlayHorizontalLaser", "PlayVerticalLaser" };
+    private string[] phaseTwoTriggerNames = { "PlayRightHandSlam", "PlayLeftHandSlam", "PlayDiagnolSlam" };
+    private string[] phaseThreeTriggerNames = { "PlayHorizontalLaser", "PlayVerticalLaser" };
 
 
     // Start is called before the first frame update
@@ -43,6 +43,7 @@ public class CyclopsPhases : MonoBehaviour
         }
         else if (currentHealth < 50 && currentHealth > 0)
         {
+            actionCooldownTime = 4;
             currentPhase = phases.phase3;
         }
     }
