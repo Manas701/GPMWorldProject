@@ -125,7 +125,7 @@ MonoBehaviour:
   moveAcceleration: 2000
   jumpForce: 6
   movementSpeedCap: 5
-  groundedFriction: 4
+  groundedFriction: 10
   fallMultiplier: 2.5
   velocityCap: 0
   coyoteTime: 0.15
