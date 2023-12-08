@@ -157,17 +157,20 @@ public class PlayerController : MonoBehaviour
 
     #region Helper Functions
 	void OnTriggerEnter2D(Collider2D collider) {
+        Debug.Log(collider.gameObject.tag);
 		if (collider.gameObject.tag == "Enemy" && !invincible) {
 			TakeDamage(collider.gameObject.transform.position);
 		}
 	}
 	void OnCollisionEnter2D(Collision2D collision) {
 		if (collision.gameObject.tag == "Bullet") {
-			if (!invincible)
-			{
-				TakeDamage(collision.gameObject.transform.position);
-			}
-			Destroy(collision.gameObject);
+            if (collision.gameObject.GetComponent<Bullet>().shooter == "Enemy") {
+                if (!invincible)
+                {
+                    TakeDamage(collision.gameObject.transform.position);
+                }
+                Destroy(collision.gameObject);
+            }
 		}
 	}
     void UpdateTimers() {

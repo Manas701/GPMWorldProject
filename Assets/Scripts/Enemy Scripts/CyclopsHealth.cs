@@ -27,7 +27,7 @@ public class CyclopsHealth : MonoBehaviour
         
     }
 
-    void TakeDamage(float damageAmount)
+    public void TakeDamage(float damageAmount)
     {
         healthAmount -= damageAmount;
         cp.currentHealth = healthAmount;
