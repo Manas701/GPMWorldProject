@@ -19,7 +19,7 @@ public class ComicHandler : MonoBehaviour
     public Image comicImagePlace;
     public TextMeshProUGUI comicTextPlace;
 
-    private bool isLoadingComic = false;
+    [SerializeField] private bool isLoadingComic = false;
     int comicIndex = 0;
     int currentSceneIndex;
 
@@ -67,8 +67,6 @@ public class ComicHandler : MonoBehaviour
         StartCoroutine(processTextScolling(comicPages[comicIndex].comicText));
 
         comicIndex++;
-
-        isLoadingComic = false;
     }
 
     IEnumerator processTextScolling(string dialogue)
@@ -84,6 +82,8 @@ public class ComicHandler : MonoBehaviour
                 comicTextPlace.text += dialogue[i];
             }
         }
+
+        isLoadingComic = false;
     }
 
 }
