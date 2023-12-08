@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 3350557795622789915}
   m_Layer: 6
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -122,6 +122,7 @@ MonoBehaviour:
   fireDist: 0.75
   fireCooldown: 0.25
   kbMultiplier: 1000
+  maxHealth: 5
   flashTime: 1
   minRotateAngle: 30
   moveAcceleration: 2000

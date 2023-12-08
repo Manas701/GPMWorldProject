@@ -30,7 +30,11 @@ public class PlayerController : MonoBehaviour
 	[Tooltip("how long between shots")]
 	public float fireCooldown = 0.25f;
 	protected float fireCooldownTimer = 0f;
+	[Tooltip("how far he gets sent (i wouldn't change this)")]
 	public float kbMultiplier = 1000.0f;
+	[Tooltip("starting amount of HP")]
+	public int maxHealth;
+	private int health = 0;
 	[Tooltip("Amount of time damage flash lasts")]
 	public float flashTime = 1.0f;
     private float flashTimer = 0;
@@ -151,6 +155,15 @@ public class PlayerController : MonoBehaviour
 			TakeDamage(collider.gameObject.transform.position);
 		}
 	}
+	void OnCollisionEnter2D(Collision2D collision) {
+		if (collision.gameObject.tag == "Bullet") {
+			if (!invincible)
+			{
+				TakeDamage(collision.gameObject.transform.position);
+			}
+			Destroy(collision.gameObject);
+		}
+	}
     void UpdateTimers() {
         jumpBufferTimer = Mathf.Max(jumpBufferTimer-Time.deltaTime, 0f);
         coyoteTimeTimer = Mathf.Max(coyoteTimeTimer-Time.deltaTime, 0f);
@@ -163,8 +176,8 @@ public class PlayerController : MonoBehaviour
     }
     void UpdateFireDirection() {
         sprite.flipX = fireDirection.x < 0;
-        float angle = Mathf.Atan2(-fireDirection.y, -fireDirection.x) * Mathf.Rad2Deg;
-        Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
+        // float angle = Mathf.Atan2(-fireDirection.y, -fireDirection.x) * Mathf.Rad2Deg;
+        // Quaternion rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         // fanAnim.transform.rotation = Quaternion.Slerp(fanAnim.transform.rotation, rotation, 50f*Time.deltaTime);;
     }
     void UpdatePhysics() {
@@ -184,6 +197,7 @@ public class PlayerController : MonoBehaviour
     }
 	void TakeDamage(Vector3 damagePos) {
 		DamageFlash();
+		health--;
 		// Debug.Log("Player Position: " + gameObject.transform.position);
 		// Debug.Log("Damaging Position: " + damagePos);
 		Vector3 knockbackVector = gameObject.transform.position - damagePos;

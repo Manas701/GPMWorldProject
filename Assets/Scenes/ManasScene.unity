@@ -28882,6 +28882,10 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 364881775990909485, guid: 1916a071446874cc8ad6b956c046a180, type: 3}
+      propertyPath: detectionSize
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 1176433948054652105, guid: 1916a071446874cc8ad6b956c046a180, type: 3}
       propertyPath: m_Name
       value: Enemy
@@ -28937,6 +28941,22 @@ PrefabInstance:
     - target: {fileID: 6530798802693262290, guid: 1916a071446874cc8ad6b956c046a180, type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8979748579710202749, guid: 1916a071446874cc8ad6b956c046a180, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8979748579710202749, guid: 1916a071446874cc8ad6b956c046a180, type: 3}
+      propertyPath: m_SortingLayer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8979748579710202749, guid: 1916a071446874cc8ad6b956c046a180, type: 3}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8979748579710202749, guid: 1916a071446874cc8ad6b956c046a180, type: 3}
+      propertyPath: m_SortingLayerID
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
